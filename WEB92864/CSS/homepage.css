@@ -36,8 +36,11 @@ nav {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 10vh;
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
+
 
 .three {
   grid-column: 4;
