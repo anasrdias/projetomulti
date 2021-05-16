@@ -1,37 +1,132 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>COMUNIDADES</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="css/homepage.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-<header>
-  <div class="main">
-    <div class="logo">
-      <img src="imagens/logo.png" alt="logo">
-    </div>
-    <nav>
-      <ul>
-      <li><a href="index.html">Página Inicial</a></li>
-      <li><a href="edição.html">Nesta edição</a></li>
-      <li><a href="registo.html">Registe-se</a></li>
-      <li><a href="contactos.html">Contactos</a></li>
-      <li><a href="sobrenos.html">Sobre nós</a></li>
-    </ul>
-    </nav>
+    <header>
+      <nav class="container">
+        <div class="one">
+          <a href="edição.html" class="navLinks">Nesta Ediçao</a>
+        </div>
+        <div class="two">
+          <a href="registo.html" class="navLinks">Registo</a>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <img src="imagens/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="three">
+          <a href="contactos.html" class="navLinks">Contactos</a>
+        </div>
+        <div class="four">
+          <a href="sobrenos.html" class="navLinks">Sobre nós</a>
+        </div>
+      </nav>
+    </header>
 
+    <section class="grelha_contentor">
+      <article class="grelha_item item_destaque">
+        <audio controls class="audio">
+          <source src="song.ogg" type="audio/ogg" />
+          <source src="song.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <h1 id="main-title">Comunidades - A sua revista on-line</h1>
+        <p id="main-text">
+          Este mês a sua revista COMUNIDADES traz até si uma comunidade da Gen
+          Z: a comunidade de gaming. Com a evolução do papel da intenet e das
+          redes sociais na nossa vida, nestes últimos anos, tem sido crescente o
+          número de pessoas que aderem a esta comunidade, seja por lazer ou até
+          mesmo profissão.
+        </p>
+      </article>
 
-  </div>
-  <div class="title">
-    <h1>A sua revista on-line</h1>
-  </div>
+      <article class="grelha_item image-item"></article>
 
+      <article class="grelha_item">
+        <article class="sub-grelha titulo-noticia">
+          <h2>Nesta edição:</h2>
+          <p>
+            <br>
+            O jogo da Nintendo, Animal Crossing: New Horizons celebrou o seu primeiro ano de lançamento. <br>
+            O Torneio Mid Season de League of Legends regressa este ano. <br>
+            A sua revista COMUNIDADES, este mês, traz-lhe todas as atualizações sobre os seus jogos favoritos.
+          </p>
+        </article>
+        <section class="sub-grelha grelha_sub_pai">
+          <article class="sub-grelha image-item ac"></article>
+          <article class="sub-grelha image-item lol"></article>
+        </section>
+        <section class="sub-grelha grelha_sub_pai dif_grids">
+          <article class="sub-grelha">
+            <h2>Animal Crossing: New Horizons</h2>
+            <p>
+              No passado dia 20 de Março o jogo Animal Crossing: New Horizons
+              celebrou um ano desde o seu lançamento. O jogo já conta com mais
+              de 30 milhões de vendas. Para celebrar a data a Nintendo lançou um
+              novo update que trouxe algumas novidades para o jogo, por exemplo
+              um novo item de um um bolo de aniversário.
+              <br><br>
+              Outras novidades
+              incluiram um update no sistema de amiibo cards, onde foram
+              incluídos 6 novos “villagers” no jogo, em conjunto com a Sanrio.
+              Também foram adicionados novos espaços para os jogadores poderem
+              costumizar mais padrões no jogo. Sanrio amiibo villagers
+              Juntamente com a celebração de um ano de jogo, vários eventos
+              ocurreram em simultâneo: o Bunny Day para a celebração da páscoa
+              e, nas cidades do hemisfério norte, aconteceu também a Cherry
+              Blossom Season em representação da chegada da Primavera. A
+              comunidade de Animal Crossing não fica indiferente a todo este
+              cuidado por parte dos criadores com a estética e design do jogo.
+              <br><br>
+                            A youtuber “Lex
+              Play”, que no seu canal
+              se dedica à transmissão
+              de gameplays
+              do jogo, demonstrou
+              no seu twitter
+              a sua admiração por
+              um dos novos amiibo
+              villagers em conjunto
+              com a Sanrio
+              (Marty), durante o
+              dia de Páscoa, em
+              que todos estavam
+              vestidos de ovo, mudando
+              apenas as cores
+              das suas roupas.
+              Na fotografia também
+              é possível ver
+              as árvores de Cherry
+              Blossom do evento
+              de Primavera.
+            </p>
+            <a href="edição.html"><p id="ver-mais"> >>Ver Mais</p></a>
+          </article>
+          <article class="sub-grelha image-item next"></article>
+        </section>
+      </article>
+    </section>
 
+    <footer>© Sofia Dias - Multimédia 2, Universidade de Aveiro</footer>
 
-</header>
-
+    <video muted loop autoplay class="bgvideo">
+      <source src="imagens/backgroundvideo.mp4" type="video/mp4" />
+      <source src="imagens/backgroundvideo.webm" type="video/webm" />
+    </video>
   </body>
 </html>

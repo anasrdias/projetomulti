@@ -100,3 +100,195 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+
+.bgvideo {
+  position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1000;
+	background: url(images/torre.jpg) no-repeat;
+	background-size: cover;
+}
+
+/* --------- MOBILE FIRST --------- */
+
+/* FORMATAÇÃO GERAL */
+html {
+
+}
+body{
+  background-color: white;
+  color: black;
+  margin: 0;
+  font-family: "Times", "Times New Roman", serif;
+  font-size: 16pt;
+  max-width:1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* LAYOUT */
+header{
+  color: black;
+  background-color: yellow;
+  padding: 1em;
+  text-transform: uppercase;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5em;
+  font-size: 10pt;
+  text-align: center;
+}
+nav{
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 12pt;
+  border-bottom: 4px solid yellow;
+}
+nav a {
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1pt;
+  padding: 10px;
+  margin: 0;
+}
+nav a:hover {
+  background-color: yellow;
+  border-bottom: 4px solid black;
+}
+footer {
+  background-color: lightgrey;
+  color: black;
+  border-top: 4px solid yellow;
+  padding: 10px;
+  margin-top:10px;;
+  font-size: 10px;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+video, iframe {
+  max-width: 100%;
+}
+form {
+  padding-left: 10px;
+}
+label {
+  font-size: 9pt;
+  text-transform: uppercase;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  color: green;
+}
+.inputTXT {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 16pt;
+  color:grey;
+}
+.inputBTN {
+  padding:10px;
+  background-color: lightblue;
+  font-weight: bold;
+}
+.inputBTN:hover {
+  background-color: yellow;
+  border: 2px solid blue;
+}
+.inputBTN:active {
+  background-color: blue;
+  color: white;
+}
+/* HEADINGS */
+h1{
+  font-size: 28pt;
+  padding-left: 10px;
+  color: black;
+  font-family: "Helvetica", "Arial", sans-serif;
+  padding-top: 2em;
+  margin-bottom: 1em;
+}
+h1::after {
+  content:" em mobile";
+  color:red;
+}
+h2{
+  font-size: 20pt;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: blue;
+  text-transform: uppercase;
+  font-weight: 100;
+  padding-top: 2em;
+  margin-bottom: -0.3em;
+}
+
+/* GRELHA */
+.grelha_contentor {
+  /*background-color: red;*/
+  margin: 10px;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 0.5em;
+}
+.grelha_item{
+  padding: 5px;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* --------- TABLET --------- */
+@media (min-width: 600px) {
+  h1::after {
+    content:" em tablet";
+    color:blue;
+  }
+  .grelha_contentor {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grelha_item {
+    background-color: rgba(0, 0, 255, 0.2);
+  }
+}
+
+/* --------- LAPTOP --------- */
+@media (min-width: 800px) {
+  body {
+    font-size: 14pt;
+  }
+  header {
+    font-size: 16pt;
+  }
+  nav {
+    font-size: 9pt;
+  }
+
+  /* HEADINGS */
+  h1 {
+    font-size: 24pt;
+  }
+  h1::after {
+    content:" em desktop";
+    color:green;
+  }
+  h2 {
+    font-size: 16pt;
+  }
+
+  /* GRELHA */
+  .grelha_contentor {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .item_destaque {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .grelha_item {
+    background-color: rgba(0, 255, 0, 0.2);
+  }
+
+}

@@ -1,0 +1,31 @@
+.inputTXT {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 16pt;
+  color: grey;
+}
+.inputBTN {
+  padding: 10px;
+  background-color: lightblue;
+  font-weight: bold;
+}
+.inputBTN:hover {
+  background-color: yellow;
+  border: 2px solid blue;
+}
+.inputBTN:active {
+  background-color: blue;
+  color: white;
+}
+
+form {
+  padding-left: 10px;
+}
+
+label {
+  font-size: 9pt;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: green;
+}

@@ -1,0 +1,286 @@
+.logo img {
+  width: 100px;
+}
+
+/* * Navbar Items ----------------------- */
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  align-items: center;
+  text-align: center;
+  border-bottom: 4px solid black;
+  background: linear-gradient(#cfcfcf, #9198e5);
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+  }
+}
+
+.one {
+  grid-column: 1;
+}
+
+.two {
+  grid-column: 2;
+}
+
+.logo {
+  grid-column: 3;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10vh;
+}
+
+.three {
+  grid-column: 4;
+}
+
+.four {
+  grid-column: 5;
+}
+
+.navLinks {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.navLinks:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 0.5em 1em;
+}
+
+/* *------------------------------- */
+
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1000;
+}
+
+/* --------- MOBILE FIRST --------- */
+
+/* FORMATAÇÃO GERAL */
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  font-size: 16pt;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inconsolata", monospace;
+}
+
+footer {
+  background-color: lightgrey;
+  color: black;
+  border-top: 4px solid black;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(#9198e5, #cfcfcf);
+}
+
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* HEADINGS */
+h2 {
+  font-size: 28px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: -0.3em;
+  color: #fff;
+  animation: mainTitle 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@-webkit-keyframes mainTitle {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0300a8a6,
+      0 0 40px #0300a8a6, 0 0 50px #0300a8a6, 0 0 60px #0300a8a6,
+      0 0 70px #0300a8a6;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #4d77ff, 0 0 40px #4d77ff,
+      0 0 50px #4d77ff, 0 0 60px #4d77ff, 0 0 70px #4d77ff, 0 0 80px #4d77ff;
+  }
+}
+
+p {
+  color: white;
+}
+@import url("fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+#main-title {
+  color: white;
+  font-size: 3.5em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin-bottom: 0px;
+  font-family: "Julius Sans One", sans-serif;
+
+  animation: mainTitle 1s ease-in-out infinite alternate;
+}
+
+#main-text {
+  font-size: 24px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* GRELHA */
+.grelha_contentor {
+  /*background-color: red;*/
+  margin: 10px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 0.5em;
+  padding: 20px;
+  grid-template-columns: 1fr 3fr;
+}
+
+.item_destaque {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grelha_item {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+.grelha_sub_pai {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 0.5em;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dif_grids {
+  grid-template-columns: 3fr 1fr !important;
+}
+
+.titulo-noticia {
+  padding: 20px;
+  margin: 10px;
+}
+
+.image-item {
+  background-image: url("../imagens/1.jpg");
+  background-size: cover;
+  min-height: 720px;
+  min-width: 400px;
+  box-shadow:  rgba(0, 0, 255, 0.2);
+  border: 2px solid #000e3d;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 5px #071e48e3;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 6px;
+}
+
+.lol {
+  background-image: url("../imagens/lol.jpg");
+  min-height: 300px;
+  min-width: auto;
+}
+
+.ac {
+  background-image: url("../imagens/ac.jpg");
+  min-height: 300px;
+  min-width: auto;
+}
+
+.next {
+  background-image: url("../imagens/next.jpg");
+  min-height: 450px;
+  min-width: auto;
+}
+
+#ver-mais {
+  color: #a3b9ff;
+  font-size: 28px;
+}
+
+#ver-mais:hover {
+  color: #577eff;
+}
+
+.footer {
+  background-color: rgb(231, 231, 105);
+}
+
+.audio {
+  opacity: 0.7;
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+/* --------- TABLET --------- */
+@media (min-width: 600px) {
+}
+
+/* --------- LAPTOP --------- */
+@media (min-width: 800px) {
+  body {
+    font-size: 14pt;
+  }
+  header {
+    font-size: 16pt;
+  }
+  nav {
+    font-size: 13pt;
+  }
+
+  /* HEADINGS */
+  h1 {
+    font-size: 24pt;
+  }
+  h2 {
+    font-size: 26pt;
+  }
+}
